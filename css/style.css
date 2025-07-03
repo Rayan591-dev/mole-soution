@@ -115,6 +115,8 @@ color: white; border-radius: 8px; border: none; padding: 8px 37px;}
     .navbar .offcanvas-body a.btn{display: none;}}
 @media (max-width: 767px) {
     .navbar .offcanvas-body a.btn{display: none;}
+         nav.navbar{padding: 8px 0;}
+
 }
 
 /*end navbar*/
