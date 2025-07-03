@@ -92,7 +92,7 @@ a {
 }
 
 /*navbar*/
-nav.navbar{padding:26px 0;}
+nav.navbar{padding:18px 0;}
 @media (max-width: 992px) {
  nav.navbar{padding: 12px 0;}}  
 
@@ -104,7 +104,7 @@ width: 103px;
 height: 78px;
 }
 
-.navbar .offcanvas-body a.btn{ width: fit-content;
+ a.btn{ width: fit-content;
   position: absolute;
   top: 4%;
   left: 80%;
