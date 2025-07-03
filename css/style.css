@@ -1,0 +1,114 @@
+/*start varibles*/
+:root {
+    ---content-secondery: #2A8ECD;
+    ---content-primary:#345F7C;
+    ---background-accent:#A8C6E5;
+    ---btn-color:#CD712A;
+    ---padding-section-top: 120px;
+    ---padding-section-bottom: 120px;
+}
+
+:host,
+:root {
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+}
+
+/*end varibles*/
+/*start globle rules*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(---background-accent);
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--content-primary);
+
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*small*/
+@media (min-width: 767px) {
+    .container {
+        width: 750px;
+
+    }
+}
+
+/*medium*/
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/*large*/
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/*navbar*/
+nav.navbar{padding:26px 0;}
+@media (max-width: 992px) {
+ nav.navbar{padding: 12px 0;}}  
+
+.navbar .offcanvas-body ul.navbar-nav li a {color :black}
+.navbar .offcanvas-body ul.avbar-nav{display: flex; justify-content: start;} 
+.navbar .offcanvas-body .log{left: 50%;}
+.navbar .offcanvas-body .log img,.navbar .offcanvas-title img{
+width: 103px;
+height: 78px;
+}
+a.btn-1{ background-color: var(---btn-color);
+color: white; border-radius: 8px; border: none; padding: 8px 37px;}
+@media (max-width: 992px) {
+ .navbar .offcanvas-body ul.navbar-nav {display: flex; justify-content: center;}
+}
+@media (max-width: 767px) {
+}
+
+/*end navbar*/

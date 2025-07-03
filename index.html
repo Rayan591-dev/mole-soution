@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N mole</title>
+    <!--icon-->
+    <link rel="icon" href="./img/NMOLE LOGO.png">
+    <!--bootstap-->
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <!--render all elments normally-->
+    <link rel="stylesheet" href="css/normaliz.css">
+        <!--swiper css-->
+<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+<!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--main file of css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--main file of js-->
+    <script src="./js/main.js"></script>
+    <!--font awessome-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!--google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <script src="bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+  <!--navbar section-->
+        <nav class="navbar navbar-expand-lg ">
+  <div class="container">
+    <button class="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+<i class="fa-solid fa-bars-staggered fs-2 "></i>    </button>
+    <div class="offcanvas offcanvas-end  "style="opacity: 0.8;" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <div class="offcanvas-title fs-3 fw-bold m-auto mt-3" id="offcanvasNavbarLabel"><img src="./img/NMOLE LOGO.png" alt=""></div>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      
+      <div class="offcanvas-body position-relative d-lg-flex align-items-center justify-content-lg-between">
+        <ul class="navbar-nav mt-md-3 mt-lg-0 align-items-center">
+          <li class="nav-item ">
+            <a class="nav-link active me-3" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item mt-2 mt-lg-0">
+            <a class="nav-link me-3" href="#">About</a>
+          </li>
+           <li class="nav-item mt-2 mt-lg-0">
+            <a class="nav-link me-3" href="#">Events</a>
+          </li>
+          <li class="nav-item dropdown mt-2 mt-lg-0">
+            <a class="nav-link dropdown-toggle me-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Projects
+            </a>
+            <ul class="dropdown-menu border border-0">
+              <li><a class="dropdown-item mt-2" href="#">Chmeical Projects</a></li>
+              <li><a class="dropdown-item mt-2" href="#"> Mechanical Projects</a></li>
+            
+            </ul>
+          </li>
+           <li class="nav-item mt-2 mt-lg-0">
+            <a class="nav-link me-3" href="#">Committees</a>
+          </li>
+        </ul>
+  <div class="log position-absolute d-lg-flex d-none ">
+          <div class="img"><img src="./img/NMOLE LOGO.png" alt=""></div>
+        </div>       
+      </div>
+   
+  </div>
+
+</nav>
+    
+ <form class="d-lg-flex  mt-3 ">
+  <!--المشكله اللي موجوده هنا بسبب انه المودل بيختفثي مع الناف وطبعا بيتكرر المودل دا في كله ف بيختفي-->
+       <div class="modal fade btn-1 " id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 fw-bold " id="exampleModalToggleLabel"style="margin-left:40%;">Join Us</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<form>
+      <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Full Name</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Id Number</label>
+    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Department</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+    <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Phone Number</label>
+    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label ">Committees</label>
+   <select class="form-select  mt-1" aria-label="Default select example">
+  <option value="1">Ac Chemical</option>
+  <option value="2">Ac mechinical</option>
+  <option value="3">pr</option>
+    <option value="4">oc</option>
+  <option value="5">media</option>
+    <option value="6">Hr</option>
+</select>
+  </div>
+
+ 
+    
+    <button type="submit" class="btn btn-primary d-flex justify-content mt-4">Submit</button>
+</form>     
+ </div>
+    </div>
+  </div>
+          </div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Hide this modal and show the first with the button below.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+      </div>
+    </div>
+  </div>
+</div>
+<a class="btn-1 fw-bold d-flex " data-bs-toggle="modal" href="#exampleModalToggle" role="button">Join Us</a></button>
+        </form> 
+ <!--end navbar-->
+
+
+</body>
+</html>
