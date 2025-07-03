@@ -104,16 +104,17 @@ width: 103px;
 height: 78px;
 }
 
-a.btn{ width: fit-content;
+.navbar .offcanvas-body a.btn{ width: fit-content;
   position: absolute;
-  top: 7%;
+  top: 4%;
   left: 80%;
      background-color: var(---btn-color);
 color: white; border-radius: 8px; border: none; padding: 8px 37px;}
 @media (max-width: 992px) {
  .navbar .offcanvas-body ul.navbar-nav {display: flex; justify-content: center;}
-}
+    .navbar .offcanvas-body a.btn{display: none;}}
 @media (max-width: 767px) {
+    .navbar .offcanvas-body a.btn{display: none;}
 }
 
 /*end navbar*/
