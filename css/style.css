@@ -46,7 +46,7 @@ a {
 }
 
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -103,7 +103,12 @@ nav.navbar{padding:26px 0;}
 width: 103px;
 height: 78px;
 }
-a.btn-1{ background-color: var(---btn-color);
+
+a.btn{ width: fit-content;
+  position: absolute;
+  top: 7%;
+  left: 80%;
+     background-color: var(---btn-color);
 color: white; border-radius: 8px; border: none; padding: 8px 37px;}
 @media (max-width: 992px) {
  .navbar .offcanvas-body ul.navbar-nav {display: flex; justify-content: center;}
@@ -112,3 +117,39 @@ color: white; border-radius: 8px; border: none; padding: 8px 37px;}
 }
 
 /*end navbar*/
+
+/*lannding*/
+.lannding{
+    padding-top: var(---padding-section-top);
+    padding-bottom: var(---padding-section-bottom);
+    background-image: url(../img/Landing-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+.lannding::before{position: absolute; content: "";
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+background-color: rgba(0, 0, 0, 0.31);
+z-index: -1;}
+.lannding .content .farm-inf a.btn-2{
+    border: 2px solid var(---content-primary);
+    border-radius: 8px;
+    padding: 8px 46px;
+    color: white;
+}
+.lannding .content .text-1 p{color: white;}
+
+.lannding a.btn-1{ 
+     background-color: var(---btn-color);
+color: white; border-radius: 8px; border: none; padding: 8px 37px;}
+@media (max-width: 767px) {
+   .lannding .content .farm-inf a.btn-2{ padding: 8px 18px;}
+/*.lannding .content .text-1 h1{font-size: 25px;}*/
+.lannding .content .text-1 p{font-size: 13px; color: #f7f7f7d6;} }
+
+/*landing end*/
